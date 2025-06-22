@@ -14,7 +14,7 @@ __-Convert to format[1] and SDC format. Format[1] is readable by yosys tool._
 __-Convert to format[2] and .timing format to pass to Opentimer tool._
 __-Outputs a performance chart_
 
-![intro](https://github.com/manasi2max/AutoTCL_Tool/edit/main/assests/intro.png)
+![intro](https://github.com/manasi2max/AutoTCL_Tool/tree/main/assets)
 
 
 ## DAY-1
