@@ -1,25 +1,25 @@
-Read below instructions to run "vsdsynth" on your machine
+Instructions to run code files
 
-1) Make sure you install "opentimer" and "yosys" opensource EDA tools before running "vsdsynth". Installation detail video can be found in below link:
-https://www.udemy.com/vsd-a-complete-guide-to-install-open-source-eda-tools/ (FREE course)
+If running on mac, install UTM with 64ARM iso file, allot space as needed. The vsdsynth and vsdsynth.tcl need to have read, write and exceture permissions.
+Use bash command : chmod +x vsdsynth ( for execute permissions)
 
-2) Once you install all necessary tools from above links, use the below command to run "vsdsynth" (also shown in TCL Programming Part 1 & Part 2 courses)
-./vsdsynth openMSP430_design_details.csv 
+Install tcsh onto the virtual Ubuntu machine
+,,,
+sudo apt update
+sudo apt install tcsh
+,,,
 
-3) In order to run test.tcl, step no. 2) must be run atleast once. 
+Install git,vim and all the dependencies needed to run opensource tools: Yosys and Opentimer
 
-NOTE : test.tcl is to verify and understand read_sdc.proc
+_______________________________________________________________________________________________________________________
 
-NOTE : If you want to understand what does "vsdsynth" do, please enroll in below TCL Programming courses:
+Execution of tcl file: 
+,,,
+ ./vsdsynth openMSP430_design_details.csv 
+,,,
 
-TCL programming - Part 1:
-https://www.udemy.com/vsd-tcl-programming-from-novice-to-expert/
+Note: Add return statements to the .tcl file to modify and run part of the script. 
 
-TCL programming - Part 2:
-https://www.udemy.com/vsd-tcl-programming-from-novice-to-expert-part-2/
 
-#---------------------------------------------------------------------#
-"vsdsynth" is Developed and Maintained by VLSI System Design Corporation Pvt. Ltd.
-For any queries and bugs, please drop a mail to kunalpghosh@gmail.com
-#---------------------------------------------------------------------#
+
 
