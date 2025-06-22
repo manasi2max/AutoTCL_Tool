@@ -487,7 +487,7 @@ if {$enable_prelayout_timing == 1} {
 	set spef_file [open $OutputDirectory/$DesignName.spef w]
 	puts $spef_file "*SPEF \"IEEE 1481-1998\""
 	puts $spef_file "*DESIGN \"$DesignName\""
-	puts $spef_file "*DATE \"Sun Jun 11 11:59:00 2023\""
+	puts $spef_file "*DATE \"Sun Jun 21 11:59:00 2025\""
 	puts $spef_file "*VENDOR \"VLSI System Design\""
 	puts $spef_file "*PROGRAM \"TCL Workshop\""
 	puts $spef_file "*DATE \"0.0\""
