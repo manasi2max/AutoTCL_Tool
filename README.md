@@ -84,15 +84,15 @@ __Converting inputs to format[1] and feeding it to yosys for synthesis__
 
   __- Create Variables__
 
-![day2_1](csv_checked.png)
+![day2_1](assests/csv_checked.png)
 
   __- Checking if the directories exist or not_
 
-![day2_2](csv_checked_final.png)
+![day2_2](assests/csv_checked_final.png)
 
 Displays an error when the required file is not in the needed directory
 
-![day2_3](csv_error.png)
+![day2_3](assests/csv_error.png)
 
 
 ## DAY-3
@@ -107,11 +107,11 @@ Note: We need to identify bussed and non bussed inputs and outputs before enteri
 
 The script writing the sdc constraints.
 
-![Screenshot from 2023-06-18 14-19-37]()
+![3_1]()
 
 A snip of the sdc file 
 
-![Screenshot from 2023-06-18 14-16-25]()
+![3_2]()
 
 ## DAY-4
 
@@ -317,10 +317,7 @@ puts "set_timing_fpath $sdc_dirname/$sdc_filename.timing"
 ```
 We begin by opening the final timing file in write mode. Next, we open the temporary timing file in read mode to identify and process the bussed ports. To ensure all bus signals are properly constrained, we read through the synthesis netlist and locate all nets that belong to a bus. These are then written to the final timing file in the required format, applying the constraints to each port within the bus. If we encounter any lines that correspond to non-bussed signals, we simply write them as they are into the final timing file, preserving their original details.
 
-
-
-now we have reached the end of the read_sdc. proc
-Now all the procs need to be sourcd so that they can be called in the main file.
+Now that we have all the procs, need to be sourced so that they can be called in the main file.
 
 ```
 puts "\nInfo: Timing Analysis Started ... "
@@ -345,12 +342,9 @@ reopenStdout /dev/tty
 
 __Creating the spef file and config file__
 
+Logs and results are saved in the file $DesignName.results. The config file is used by the Opentimer tool to carry out the STA analysis.
 
-```
-- logs and results are saved in the file $DesignName.results
-- encountered an error where a string variable was being assigned either a null value or was bveing initialised incorrectly. It was rectified when the sdc file, __final.synth.v file__ ( string issue was from this file) and conf file was checked for errors.
 
-Now we take the outputs of STA analysis from the .results file 
 ```
 #-------------------------find worst output violation--------------------------------#
 set worst_RAT_slack "-"
