@@ -9,10 +9,13 @@ This project focuses on creating a TCL tool which takes a .csv file as an input 
 
 The Tasks include: 
 
-_*Create a command ( ./vsdsynth) which helps to transfer the .csv file from the UNIX shell to TCL script._
-_*Convert to format[1] and SDC format. Format[1] is readable by yosys tool._
-_*Convert to format[2] and .timing format to pass to Opentimer tool._
-_*Outputs a performance chart_
+__-Create a command ( ./vsdsynth) which helps to transfer the .csv file from the UNIX shell to TCL script._
+__-Convert to format[1] and SDC format. Format[1] is readable by yosys tool._
+__-Convert to format[2] and .timing format to pass to Opentimer tool._
+__-Outputs a performance chart_
+
+![intro](https://github.com/manasi2max/AutoTCL_Tool/edit/main/assests/intro.png)
+
 
 ## DAY-1
 
