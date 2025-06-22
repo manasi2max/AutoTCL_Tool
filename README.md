@@ -48,17 +48,17 @@ echo " a tcl command created by Manasi  "
 3) Verifying three general scenarios for a user POV
   - user doesnt enter the csv file
 
-![day2_1]()
+![day2_1](assets/day1_1_2.png)
 
 
   - user enters the wrong csv file/ file doesnt exist
 
 
-![day2_2]()
+![day2_2](assets/day1_1_2.png)
 
   - user enters __-help__
 
-![day2_3]()
+![day2_3](assets/day1_3.png)
 
 
 4) Source the Unix shell to the Tcl script by passing the required csv file 
@@ -84,15 +84,15 @@ __Converting inputs to format[1] and feeding it to yosys for synthesis__
 
   __- Create Variables__
 
-![day2_1]()
+![day2_1](csv_checked.png)
 
   __- Checking if the directories exist or not_
 
-![day2_2]()
+![day2_2](csv_checked_final.png)
 
 Displays an error when the required file is not in the needed directory
 
-![day2_3]()
+![day2_3](csv_error.png)
 
 
 ## DAY-3
@@ -455,7 +455,9 @@ foreach design_name $DesignName runtime $time_elapsed_in_sec instance_count $Ins
 
 puts [format $formatStr "----------" "-------" "--------------" "---------" "---------" "--------" "--------" "-------" "-------"]
 puts "\n"
+
 ```
+
 The variable formatStr uses %15s as a string formatting identifier, which ensures that each string passed to it is automatically aligned and spaced uniformly to a width of 15 characters. This provides a clean, tabular appearance for the output. A foreach loop is then used to pass the relevant output values into formatStr, allowing the script to neatly generate and display the datasheet in a structured format.
 
 
