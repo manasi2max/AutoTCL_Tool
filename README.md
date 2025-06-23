@@ -84,15 +84,15 @@ __Converting inputs to format[1] and feeding it to yosys for synthesis__
 
   __- Create Variables__
 
-![day2_1](assests/csv_checked.png)
+![day2_1](assets/csv_checked.png)
 
   __- Checking if the directories exist or not_
 
-![day2_2](assests/csv_checked_final.png)
+![day2_2](assets/csv_checked_final.png)
 
 Displays an error when the required file is not in the needed directory
 
-![day2_3](assests/csv_error.png)
+![day2_3](assets/csv_error.png)
 
 
 ## DAY-3
