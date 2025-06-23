@@ -82,15 +82,15 @@ It goes to the tclsh vsdsynth.tcl $argv[1] line in the last else block and execu
 ## DAY-2
 __Converting inputs to format[1] and feeding it to yosys for synthesis__
 
-  __- Create Variables__
+   - Create Variables
 
 ![day2_1](assets/csv_checked.png)
 
-  __- Checking if the directories exist or not_
+   - Checking if the directories exist or not
 
 ![day2_2](assets/csv_checked_final.png)
 
-Displays an error when the required file is not in the needed directory
+    - Displays an error when the required file is not in the needed directory
 
 ![day2_3](assets/csv_error.png)
 
